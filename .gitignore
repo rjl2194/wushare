@@ -1,0 +1,13 @@
+# Ignore PostgreSQL dump files unless intentionally added
+*.dump
+
+# Ignore database configuration and environment files
+.env
+config/database.yml
+
+# Ignore OS and dependency files
+.DS_Store
+node_modules/
+venv/
+__pycache__/
+
