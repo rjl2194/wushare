@@ -1,0 +1,4 @@
+[service]
+build = "cd wushare-back && npm install"
+start = "cd wushare-back && node server.js"
+
