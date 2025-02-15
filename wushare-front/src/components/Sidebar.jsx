@@ -2,18 +2,16 @@ import React from 'react';
 
 const Sidebar = () => {
   return (
-    <div style={{
-      width: '20vw',
-      height: '100vh',
-      backgroundColor: '#333',
-      color: 'white',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      padding: '20px'
-    }}>
-      <h2>Sidebar</h2>
-      <p>Tools and settings go here.</p>
+    <div
+      style={{
+        width: '20%',
+        backgroundColor: '#f0f0f0',
+        padding: '20px',
+        borderLeft: '1px solid #ccc',
+      }}
+    >
+      <h3>Sidebar</h3>
+      <p>This is the sidebar content.</p>
     </div>
   );
 };

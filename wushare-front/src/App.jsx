@@ -1,17 +1,17 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import PerformanceBoards from './pages/PerformanceBoards'; // ✅ Correct import
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import PerformanceBoard from './components/PerformanceBoard';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/boards" element={<PerformanceBoards />} />
+        <Route path="/performance" element={<PerformanceBoard />} />
       </Routes>
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;
